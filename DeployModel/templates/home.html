@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Stand for autism</title>
+
+</head>
+<body>
+    this is my home page page
+    <form action="{% url 'res'  %}">
+         {% csrf_token %}
+    
+
+       Chromosome: <input type="text" required name="Chromosome"> <br><br> 
+       Position: <input type="text" required name="Position"> <br><br> 
+       A: <input type="text" required name="A"> <br><br> 
+       C: <input type="text" required name="C"> <br><br> 
+       G: <input type="text" required name="G"> <br><br> 
+       T: <input type="text" required name="T"> <br><br> 
+
+       <input type="submit" name="" value="submit" >
+
+      </form>
+
+</body>
+</html>
